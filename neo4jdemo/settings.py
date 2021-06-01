@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_neomodel',
+    "graphene_django"
     'books',
 ]
 
@@ -115,6 +116,9 @@ USE_L10N = True
 
 USE_TZ = True
 
+GRAPHENE = {
+    "SCHEMA": "django_root.schema.schema"
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
