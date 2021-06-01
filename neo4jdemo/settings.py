@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_neomodel',
-    "graphene_django"
+    'graphene_django',
     'books',
+    'ingredients',
 ]
 
 NEOMODEL_NEO4J_BOLT_URL = 'bolt://neo4j:1234@localhost:11003'
@@ -123,7 +124,7 @@ USE_L10N = True
 USE_TZ = True
 
 GRAPHENE = {
-    "SCHEMA": "django_root.schema.schema"
+    "SCHEMA": "neo4jdemo.schema.schema"
 }
 
 # Static files (CSS, JavaScript, Images)
