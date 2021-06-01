@@ -42,6 +42,12 @@ INSTALLED_APPS = [
     'books',
 ]
 
+NEOMODEL_NEO4J_BOLT_URL = 'bolt://neo4j:1234@localhost:11003'
+NEOMODEL_SIGNALS = True
+NEOMODEL_FORCE_TIMEZONE = False
+NEOMODEL_MAX_CONNECTION_POOL_SIZE = 50
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
